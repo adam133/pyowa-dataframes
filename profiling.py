@@ -1,11 +1,8 @@
 import multiprocessing
-from scalene import scalene_profiler
 
 
 def profile_function(func, *args, **kwargs):
-    scalene_profiler.start()
     output = func(*args, **kwargs)
-    scalene_profiler.stop()
     return output
 
 
