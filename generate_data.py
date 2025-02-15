@@ -1,9 +1,9 @@
-from faker import Faker
 import csv
 
-def generate_csv_data(
-    num_rows: int, filename: str = "small_dataset.csv"
-):
+from faker import Faker
+
+
+def generate_csv_data(num_rows: int, filename: str = "small_dataset.csv"):
     fake = Faker()
     data = []
     for _ in range(num_rows):
