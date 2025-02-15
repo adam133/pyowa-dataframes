@@ -12,4 +12,5 @@ dependencies = [
     "memory-profiler==0.61.0",
     "pyarrow==19.0.0",
     "pyspark==3.5.4",
+    "scalene==1.5.51",
 ]

@@ -11,3 +11,9 @@ wheels/
 
 # CSV files
 resources/
+
+profile.json
+profile.html
+
+# temp outputs
+outputs
