@@ -12,8 +12,12 @@ wheels/
 # CSV files
 resources/
 
+# Scalene profile files
 profile.json
 profile.html
 
 # temp outputs
 outputs
+
+# os specific files
+.DS_Store

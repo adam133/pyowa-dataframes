@@ -7,14 +7,19 @@ Then it will run a process function as defined in the main.py file for each data
 ## To use:
 
 Run comparison:
+
 ```
 make run
 ```
 
 Cleanup:
+
 ```
 make clean
 ```
+
+After running, it will open up a browser window of the scalene profiling results:
+![example result](./docs/example_output.png)
 
 ## Notes on benchmarking
 
