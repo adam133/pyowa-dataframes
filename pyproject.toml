@@ -13,4 +13,8 @@ dependencies = [
     "pyarrow==19.0.0",
     "pyspark==3.5.4",
     "scalene==1.5.51",
+    "rise==5.7.1",
+    "notebook<7",
+    "pip",
+    "pip-tools",
 ]
