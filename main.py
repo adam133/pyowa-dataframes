@@ -10,6 +10,8 @@ from processors.polars_processing import \
     calculate_result as polars_calculate_result
 from processors.pyspark_processing import \
     calculate_result as pyspark_calculate_result
+from processors.daft_processing import \
+    calculate_result as daft_calculate_result
 from profiling import benchmark
 
 # number of rows in each dataset, decrease this for faster runtime
@@ -72,6 +74,9 @@ def main():
         "pyspark_small": lambda: pyspark_calculate_result(
             RESOURCE_PATH + SMALL_DATASET_FILENAME
         ),
+        "daft_small": lambda: daft_calculate_result(
+            RESOURCE_PATH + SMALL_DATASET_FILENAME
+        ),
     }
 
     medium_benchmarks = {
@@ -87,6 +92,9 @@ def main():
         "pyspark_medium": lambda: pyspark_calculate_result(
             RESOURCE_PATH + MEDIUM_DATASET_FILENAME
         ),
+        "daft_medium": lambda: daft_calculate_result(
+            RESOURCE_PATH + MEDIUM_DATASET_FILENAME
+        ),
     }
 
     large_benchmarks = {
@@ -100,6 +108,9 @@ def main():
             RESOURCE_PATH + LARGE_DATASET_FILENAME
         ),
         "pyspark_large": lambda: pyspark_calculate_result(
+            RESOURCE_PATH + LARGE_DATASET_FILENAME
+        ),
+        "daft_large": lambda: daft_calculate_result(
             RESOURCE_PATH + LARGE_DATASET_FILENAME
         ),
     }
