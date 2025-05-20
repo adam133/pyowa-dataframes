@@ -10,7 +10,8 @@ wheels/
 .venv
 
 # CSV files
-resources/
+./resources/*
+*.csv
 
 # Scalene profile files
 profile.json
