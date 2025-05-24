@@ -6,6 +6,20 @@ Slides/notebooks/code for PyOWA presentation on Dataframes.
 
 [Presentation Slides](./slides/presentation_slides.ipynb)
 
+## Environment Setup
+
+Requires `uv` to be installed - [uv](https://docs.astral.sh/uv/)
+
+```bash
+make venv
+source .venv/bin/activate
+```
+
+Then you can run the notebook slides with:
+```bash
+jupyter notebook
+```
+
 # Dataframe Comparison
 
 This repo includes a very simple tool for running and comparing different dataframe libraries. When run, it will create some dummy data in ./resouces if it doesn't exist - this can take some time, possibly 5 minutes or so for the largest file.
