@@ -25,3 +25,6 @@ outputs
 
 # notebook checkpoints
 *.ipynb_checkpoints
+
+# delta table
+resources/delta_table
